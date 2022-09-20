@@ -1,24 +1,13 @@
 let userChoice = -1
+let btns = document.getElementsByTagName("li")
 
-function storeOne() {
-    userChoice = 1
-}
+/* Add an event listener to each 'li' item to catch the selected value by the user*/
+for (let i=0; i < btns.length; ++i) {
+    btns[i].addEventListener("click", function() {
+        userChoice = btns[i].textContent
+    }) 
+} 
 
-function storeTwo() {
-    userChoice = 2
-}
-
-function storeThree() {
-    userChoice = 3
-}
-
-function storeFour() {
-    userChoice = 4
-}
-
-function storeFive() {
-    userChoice = 5
-}
 
 function showResults() {
     let divs = document.getElementsByTagName("div")
@@ -30,7 +19,7 @@ function showResults() {
     else {
         
         let selectedResult = document.getElementById("selected-result")
-        selectedResult.innerText = `You selected ${userChoice} out of 5`
+        selectedResult.textContent = `You selected ${userChoice} out of 5`
 
         for (let i = 0; i < divs.length; i++) {
             if (divs[i].classList.contains('input')) {
