@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300;400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    padding-top: 25vh;
+    font-size: 15px;
+    font-family: 'Overpass', sans-serif;
+    background: hsl(216, 12%, 8%);
+}
+
+h1 {
+    color: hsl(0, 0%, 100%)
+}
+
+.main-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+
+.feedback-box {
+    display: flex;
+    flex-flow: column wrap;
+    row-gap: 1.5rem;
+    border-radius: 25px;
+    background-image: linear-gradient(hsl(213, 19%, 18%, 1), hsl(213, 19%, 18%, 0.3));
+    width: 300px;
+    height: auto;
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+
+.feedback-box p:nth-of-type(1) {
+    color: hsl(0, 0%, 100%);
+    letter-spacing:0.05rem;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.feedback-box p:nth-of-type(2) {
+    color: hsl(216, 12%, 54%);
+    letter-spacing:0.05rem;
+    line-height: 1.5rem;
+}
+
+
+.star-img-div {
+    width: 3rem;
+    height: 3rem;
+    background-color: hsl(216, 12%, 54%, 0.15);
+    border-radius: 50%;
+    background-image: url('../images/icon-star.svg');
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+
+.rating-values-list {
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    flex-flow: row wrap;
+    column-gap: 5%;
+    list-style: none;
+    width: 100%;
+    padding: 0;
+}
+
+ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background:hsl(216, 12%, 54%, 0.15);
+    border-radius: 50%;
+    color:hsl(216, 12%, 54%);
+    user-select: none;
+    cursor: pointer;
+}
+
+ul li:hover {
+    background-color: hsl(217, 12%, 63%);
+    color:hsl(0, 0%, 100%);
+}
+
+
+
+.submit-btn {
+    border-radius: 20px;
+    background-color: hsl(25, 97%, 53%);
+    border-style: none;
+    width: 100%;
+    height: 2.5rem;
+    color:hsl(0, 0%, 100%);
+    cursor: pointer;
+    letter-spacing: 0.2rem;
+}
+
+.submit-btn:hover {
+    color: hsl(25, 97%, 53%);
+    background-color:hsl(0, 0%, 100%) ;
+}
+
+.selected-result {
+    background: hsl(217, 12%, 63%, 0.1);
+    border-radius: 30px;
+    padding: 0.5rem 0.7rem;
+    width: fit-content;
+    color:hsl(25, 97%, 53%);
+}
+
+.response {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+
+ul li:focus {
+    background-color:hsl(25, 97%, 53%);
+}
+
+.attribution {
+    color: hsl(0, 0%, 100%);
+    font-size: 1rem;
+}
+
+.attribution a {
+    color: hsl(25, 97%, 53%);
+}
+
+.attribution a:visited {
+    color: hsl(25, 82%, 29%);
+}
+
+@media screen and (max-width: 375px) {
+    .feedback-box {
+        width: 70%;
+    }
+}
