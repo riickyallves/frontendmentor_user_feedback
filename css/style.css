@@ -48,7 +48,6 @@ h1 {
     line-height: 1.5rem;
 }
 
-
 .star-img-div {
     width: 3rem;
     height: 3rem;
@@ -87,8 +86,6 @@ ul li:hover {
     background-color: hsl(217, 12%, 63%);
     color:hsl(0, 0%, 100%);
 }
-
-
 
 .submit-btn {
     border-radius: 20px;
