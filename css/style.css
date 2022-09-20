@@ -124,6 +124,7 @@ ul li:hover {
 
 ul li:focus {
     background-color:hsl(25, 97%, 53%);
+    color: hsl(0, 0%, 100%);
 }
 
 .attribution {
